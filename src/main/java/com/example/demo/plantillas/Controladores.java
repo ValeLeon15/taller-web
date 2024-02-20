@@ -13,7 +13,4 @@ public class Controladores {
         return"bienvenida";
     }
 
-    @GetMapping("/")
-    public
-
 }
