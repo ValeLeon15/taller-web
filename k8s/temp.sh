@@ -1,10 +1,10 @@
-sudo docker build -t localhost:5000/test:latest .
-sudo docker tag localhost:5000/test:latest localhost:5000/test:latest
-sudo docker push localhost:5000/test:latest
+sudo docker build -t localhost:5000/grupo_1_4:latest .
+sudo docker tag localhost:5000/grupo_1_4:latest localhost:5000/grupo_1_4:latest
+sudo docker push localhost:5000/grupo_1_4:latest
 
-sudo microk8s kubectl delete service test -n thymeleaf
-sudo microk8s kubectl delete deployment test -n thymeleaf
+sudo microk8s kubectl delete service grupo_1_4 -n thymeleaf
+sudo microk8s kubectl delete deployment grupo_1_4 -n thymeleaf
 sudo microk8s kubectl apply -f k8s/deployment.yaml
 
-sudo microk8s kubectl delete ingress test -n thymeleaf
+sudo microk8s kubectl delete ingress grupo_1_4 -n thymeleaf
 sudo microk8s kubectl apply -f k8s/ingress.yaml
