@@ -1,7 +1,7 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-   name: grupo_1_4
+   name: grupo14
    namespace: thymeleaf
 spec:
    ingressClassName: public
@@ -9,10 +9,10 @@ spec:
    - host: gruposjaveriana.dynaco.co
      http:
        paths:
-       - path: /grupo-1-4
+       - path: /grupo14
          pathType: Prefix
          backend:
            service:
-             name: grupo_1_4
+             name: grupo14
              port:
                number: 8080
