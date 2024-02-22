@@ -1,19 +1,18 @@
 package com.exampe.demo.controllers;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 
 @Controller
-@RequestMapping("/controllers")
+@RequestMapping("/grupo14/controllers")
 public class ContactenosController {
-    @PostMapping("/")
-    public String postMethodName(@RequestBody String entity) {
-        //TODO: process POST request
-        
-        return entity;
-    }
+    @GetMapping("/presentacionEquipo")
+	public String losPipolSoloTexto() {
+		return "presentacionEquipo";
+	}
     
 }
