@@ -10,9 +10,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 @RequestMapping("/grupo14/controllers")
 public class ContactenosController {
-    @GetMapping("/presentacionEquipo")
+    @GetMapping("/grupo14/presentacionEquipo")
 	public String losPipolSoloTexto() {
-		return "presentacionEquipo";
+		return "presentacionEquipo.html";
 	}
     
 }
