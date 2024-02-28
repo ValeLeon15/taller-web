@@ -1,0 +1,18 @@
+main p{
+    text-align: justify;
+  }
+  
+  .main-photo{
+    margin: 10px;
+    margin-top: 20px;
+    float: left;
+  }
+  
+  .thumbnail{
+    width: 450px;
+  }
+  
+  img:not(#titulo-y-logo, #logo-footer){
+    box-shadow: 2px 2px 15px 5px #000000;  
+    border: 1px solid black;
+  }
