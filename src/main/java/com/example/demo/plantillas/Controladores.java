@@ -8,45 +8,46 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/grupo14/plantillas")
 public class Controladores {
 
-    @GetMapping("/about-us")
+    @GetMapping("/controladorAbout-us")
     public String controlador1(){
+
         return"about-us";
     }
-    @GetMapping("/architecture")
+    @GetMapping("/controladorArchitecture")
     public String controlador2(){
         return"architecture";
     }
-    @GetMapping("/deployment")
+    @GetMapping("/controladorDeployment")
     public String  controladores3(){
         
         return"deployment";
     }
 
-    @GetMapping("/for-development")
+    @GetMapping("/controladorFor-development")
     public String controladores4(){
         return"for-development";
     }
-    @GetMapping("/form")
+    @GetMapping("/controladorForm")
     public String controladores5(){
         return"form";
     }
 
-    @GetMapping("/index")
+    @GetMapping("/controladorIndex")
     public String controladores6(){
         return"index";
     }
 
-    @GetMapping("/project-description")
+    @GetMapping("/controladorProject-description")
     public String controladores7(){
         return"project-description";
     }
 
-    @GetMapping("/requirements")
+    @GetMapping("/controladorRequirements")
     public String controladores8(){
         return"requirements";
     }
 
-    @GetMapping("/test")
+    @GetMapping("/controladorTest")
     public String controladores9(){
         return"test";
     }
