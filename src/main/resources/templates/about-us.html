@@ -37,14 +37,17 @@
       <div class="header__container">
         <div class="name__logo__container">
           <div class="logo"></div>
-          <a href="/index.html">
+          <a href="../index.html">
             <h1>Arrienda tu casa</h1>
           </a>
         </div>
         <nav class="navBar">
-          <a href="./about-us.html">Nosotros</a>
+          <!-- <a href="./about-us.html">Nosotros</a>
           <a href="./project-description.html">Proyecto</a>
-          <a href="./form.html">Contáctanos</a>
+          <a href="./form.html">Contáctanos</a>-->
+          <a th:href="@{/grupo14/plantillas/about-us}">Nosotros</a>
+          <a th:href="@{/grupo14/plantillas/project-description}">Proyecto</a>
+          <a th:href="@{/grupo14/plantillas./form.html}">Contáctanos</a>
         </nav>
       </div>
     </header>
@@ -219,7 +222,7 @@
         <div class="name__logo__container">
           <div class="logo"></div>
           <a href="">
-            <h1>Grupo 14</h1>
+            <h1>Grupo 14</h1> <!-- FALTA LINK NO SE A QUE VA-->
           </a>
         </div>
         <a

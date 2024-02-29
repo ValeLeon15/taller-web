@@ -14,7 +14,7 @@ public class Controladores {
     }
     @GetMapping("/architecture")
     public String controlador2(){
-        return"architecture\"";
+        return"architecture";
     }
     @GetMapping("/deployment")
     public String  controladores3(){
