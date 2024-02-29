@@ -18,12 +18,11 @@ public class Controladores {
         return"architecture";
     }
     @GetMapping("/controladorDeployment")
-    public String  controladores3(){
-        
+    public String controladores3(){
         return"deployment";
     }
 
-    @GetMapping("/controladorFor-development")
+    @GetMapping("/controladorForDevelopment")
     public String controladores4(){
         return"for-development";
     }
