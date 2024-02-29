@@ -10,7 +10,6 @@ public class Controladores {
 
     @GetMapping("/controladorAbout-us")
     public String controlador1(){
-
         return"about-us";
     }
     @GetMapping("/controladorArchitecture")
