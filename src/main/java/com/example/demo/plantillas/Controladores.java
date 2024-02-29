@@ -20,38 +20,6 @@ public class Controladores {
     public String  controladores3(){
         
         return"deployment";
-<<<<<<< HEAD
-    }
-
-    @GetMapping("/for-development")
-    public String controladores4(){
-        return"for-development";
-    }
-    @GetMapping("/form")
-    public String controladores5(){
-        return"form";
-    }
-
-    @GetMapping("/index")
-    public String controladores6(){
-        return"index";
-    }
-
-    @GetMapping("/project-description")
-    public String controladores7(){
-        return"project-description";
-    }
-
-    @GetMapping("/requirements")
-    public String controladores8(){
-        return"requirements";
-    }
-
-    @GetMapping("/test")
-    public String controladores9(){
-        return"test";
-=======
->>>>>>> 4efc72bcae850d5804690b718db88bfabb80a307
     }
 
     @GetMapping("/for-development")
