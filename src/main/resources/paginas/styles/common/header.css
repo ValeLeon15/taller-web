@@ -28,7 +28,7 @@
   background-color: rgb(138, 80, 126);
   border-radius: 10%;
   margin-right: 0.313rem;
-  background-image: src("../../assets/casita.png");
+  background-image: url(https://png.pngtree.com/png-clipart/20221219/original/pngtree-cartoon-house-illustration-png-image_8780795.png);
   background-size: cover;
 }
 
