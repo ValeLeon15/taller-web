@@ -46,9 +46,9 @@ public class Controladores {
         return"requirements";
     }
 
-    @GetMapping("/controladorTest")
+    @GetMapping("/controladorTests")
     public String controladores9(){
-        return"test";
+        return"tests";
     }
 
 }

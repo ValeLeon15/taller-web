@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/static/assets/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/static/assets/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/static/assets/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/static/assets/site.webmanifest" />
+
+    <link rel="stylesheet" href="/static/styles/normalize.css" />
+    <link rel="stylesheet" href="/static/styles/common/header.css" />
+    <link rel="stylesheet" href="/static/styles/common/footer.css" />
+    <link rel="stylesheet" href="/static/styles/common/button.css" />
+    <link rel="stylesheet" href="/static/styles/form.css" />
+    <title>Contactanos</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="header__container">
+        <div class="name__logo__container">
+          <div class="logo"></div>
+          <a href="/static/index.html">
+            <h1>Grupo 14</h1>
+          </a>
+        </div>
+        <nav class="navBar">
+          <a href="./about-us.html">Nosotros</a>
+          <a href="./project-description.html">Proyecto</a>
+          <a href="./form.html">Contáctanos</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="banner__container">
+      <div class="banner__container__description">
+        <h1>Formulario</h1>
+        <p>
+          Llena el formulario con tu información por favor.
+        </p>
+      </div>
+    </section>
+
+    <section class="form__container">
+      <div class="form__card">
+        <h1>Ponte en contacto</h1>
+        <form action="/controllers/submit" class="form__questions">
+          <label class="form__label" for="">Nombres</label>
+          <input
+            class="form__input"
+            id="nombres"
+            type="text"
+            placeholder="Pablo"
+          />
+          <label class="form__label" for="">Apellidos</label>
+          <input
+            class="form__input"
+            id="appellidos"
+            type="text"
+            placeholder="Marquez"
+          />
+          <label class="form__label" for="">Correo</label>
+          <input
+            class="form__input"
+            id="correo"
+            type="text"
+            placeholder="JhonDoe@email.com"
+          />
+          <label class="form__label" for="">Semestre</label>
+          <input
+            class="form__input"
+            id="semestre"
+            type="text"
+            placeholder="Semestre entre 1 y 16"
+          />
+          <label class="form__label" for="">Descripción</label>
+          <textarea
+            class="form__textarea"
+            name=""
+            id="descrpcion"
+            cols="30"
+            rows="10"
+            placeholder="Escribe tu mensaje"
+          ></textarea>
+          <button class="button__container" type="submit" id="submission">
+            Enviar
+          </button>
+        </form>
+      </div>
+    </section>
+    <footer>
+      <div class="footer__container__icons">
+        <div class="name__logo__container">
+          <div class="logo"></div>
+          <a href="">
+            <h1>Grupo 14</h1>
+          </a>
+        </div>
+        <a
+          href="https://github.com/carlosantiagorojas/WikiGroup"
+          target="_blank"
+        >
+          <img src="/static/assets/images/Github.svg" alt="GitHub logo" />
+        </a>
+      </div>
+      <hr />
+      <h2 class="copyright">© 2024 Grupo 14, Inc. All rights reserved.</h2>
+    </footer>
+  </body>
+  <script src="/static/scripts/form.js"></script>
+</html>
