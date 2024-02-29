@@ -1,9 +1,9 @@
 document.addEventListener("DOMContentLoaded", function() {
-  var nombresInput = document.getElementById("nombres");
-  var apellidosInput = document.getElementById("appellidos");
+  var nombresInput = document.getElementById("nombre");
+  var apellidosInput = document.getElementById("appellido");
   var correoInput = document.getElementById("correo");
   var semestreInput = document.getElementById("semestre");
-  var descripcionTextarea = document.getElementById("descrpcion");
+  var descripcionTextarea = document.getElementById("descripcion");
 
   var charCountDisplay = document.createElement("div");
   charCountDisplay.style.color = "green";
