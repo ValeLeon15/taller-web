@@ -60,19 +60,21 @@
     <section class="form__container">
       <div class="form__card">
         <h1>Ponte en contacto</h1>
-        <form action="/controllers/submit" class="form__questions">
+        <form action="/grupo14/controllers/submit" th:object="${Contacto}" class="form__questions" method="POST">
           <label class="form__label" for="">Nombres</label>
           <input
             class="form__input"
-            id="nombres"
+            id="nombre"
             type="text"
+            name = "nombre"
             placeholder="Pablo"
           />
           <label class="form__label" for="">Apellidos</label>
           <input
             class="form__input"
-            id="appellidos"
+            id="apellido"
             type="text"
+            name = "apellido"
             placeholder="Marquez"
           />
           <label class="form__label" for="">Correo</label>
@@ -80,6 +82,7 @@
             class="form__input"
             id="correo"
             type="text"
+            name = "correo"
             placeholder="JhonDoe@email.com"
           />
           <label class="form__label" for="">Semestre</label>
@@ -87,13 +90,14 @@
             class="form__input"
             id="semestre"
             type="text"
+            name = "semestre"
             placeholder="Semestre entre 1 y 16"
           />
           <label class="form__label" for="">Descripción</label>
           <textarea
             class="form__textarea"
-            name=""
-            id="descrpcion"
+            name="descripcion"
+            id="descripcion"
             cols="30"
             rows="10"
             placeholder="Escribe tu mensaje"
@@ -113,7 +117,7 @@
           </a>
         </div>
         <a
-          href="https://github.com/carlosantiagorojas/WikiGroup"
+          href="https://github.com/ValeLeon15/taller-web"
           target="_blank"
         >
           <img src="/static/assets/images/Github.svg" alt="GitHub logo" />
