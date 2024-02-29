@@ -28,7 +28,7 @@
   background-color: rgb(138, 80, 126);
   border-radius: 10%;
   margin-right: 0.313rem;
-  background-image: url(/assets/casita.png);
+  background-image: src("../../assets/casita.png");
   background-size: cover;
 }
 
