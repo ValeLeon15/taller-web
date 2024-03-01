@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   }
 
-  function validateName() {
+  function validarNombre() {
     var name = nombresInput.value;
     if (name === "") {
       alert("Por favor, ingrese su nombre.");
