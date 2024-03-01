@@ -11,7 +11,7 @@ import com.example.demo.entity.Contacto;
 import com.example.demo.service.IContactoService;
 
 @Controller
-@RequestMapping("/grupo14/formController")
+@RequestMapping("/grupo14/formControl")
 public class formularioController {
     @Autowired
     private IContactoService contactoService;
