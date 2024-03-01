@@ -21,8 +21,8 @@ public class Controladores {
 
 
     @GetMapping("/about-us")
-    public ModelAndView controlador1(){
-        return new ModelAndView("about-us");
+    public String controlador1(){
+        return "about-us.html";
     }
     @GetMapping("/architecture")
     public String controlador2(){
