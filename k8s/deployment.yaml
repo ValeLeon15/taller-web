@@ -17,7 +17,7 @@ spec:
          - name: github-secret
       containers:
          - name: grupo14
-           image: localhost:5000/grupo_1_4:latest
+           image: localhost:5000/grupo14:latest
            ports:
               - containerPort: 8080
 ---
