@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping ("/grupo14/descripcionProyecto")
+@RequestMapping ("/grupo14/control")
 public class descripcionProyectoController {
  @GetMapping("/descripcionProyectoController ")
  public String descripcionProyecto(){
