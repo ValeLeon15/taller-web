@@ -1,237 +1,35 @@
 <!DOCTYPE html>
-<html mlns:th="http://www.thymeleaf.org">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- Links to fav icon -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="/static/assets/images/casita.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="/static/assets/images/casita.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="/static/assets/images/casita.png"
-    />
-    <link rel="manifest" href="/static/assets/site.webmanifest" />
-
-    <link rel="stylesheet" href="/static/styles/normalize.css" />
-    <link rel="stylesheet" href="/static/styles/common/header.css" />
-    <link rel="stylesheet" href="/static/styles/common/footer.css" />
-    <link rel="stylesheet" href="/static/styles/common/pair.css" />
-    <link rel="stylesheet" href="/static/styles/about-us.css" />
-
-    <title>Nosotros</title>
-  </head>
-  <body>
-    <header>
-      <div class="header__container">
-        <div class="name__logo__container">
-          <div class="logo"></div>
-          <a href="/templates/index.html">
-            <h1>Arrienda tu casa</h1>
-          </a>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Name group</title>
+  <link rel ="stylesheet" href="/grupo14/css/styles.css" />
+</head>
+<body>
+  <header>
+    <nav> <!-- barra de inicio-->
+        <a href="presentacionEquipo.html" class = "link">Presentación equipo</a> 
+        <div class ="link">
+            <a href="bienvenida.html" class="link">Proyecto</a>
+            <div class="submenu">
+                <a href="proyecto/descripcionProyecto.html">Descripción del proyecto</a>
+                <a href="proyecto/requerimientos.html">Requerimientos</a>
+                <a href="proyecto/paraDesarrollo.html">Para desarrollo</a>
+                <a href="proyecto/pruebas.html">Pruebas</a>
+                <a href="proyecto/despliegue.html">Despliegue</a>
+                <a href="proyecto/arquitecturaProyecto.html">Arquitectura proyecto</a>
+            </div>     
         </div>
-        <nav class="navBar">
-          <a href="./about-us.html">Nosotros</a>
-          <a href="./project-description.html">Proyecto</a>
-          <a href="./form.html">Contáctanos</a>
-          <!--<a th:href="/grupo14/controllers/about-us">Nosotros</a>
-          <a th:href="/grupo14/controllers/project-description">Proyecto</a>
-          <a th:href="/grupo14/controllers/form">Contáctanos</a>-->
-        </nav>
-      </div>
-    </header>
-    <main>
-      <section class="pair__container">
-        <div class="pair">
-          <img
-            src="/static/assets/images/house.svg"
-            alt="project image"
-            class="pair__image"
-          />
-          <div class="pair__description">
-            <h1>Taller GRUPO1_4</h1>
-            <p>
-             
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section class="pair__container">
-        <div class="pair">
-          <div class="pair__description">
-            <h1>Desarrollo web</h1>
-            <p>
-             Grupo 1_4 
-             Curso de desarrollo de sofware de la Pontificia Universidad Javeriana
-            </p>
-          </div>
-          <img
-            src="/static/assets/images/worker.png"
-            alt="project image"
-            class="pair__image"
-          />
-        </div>
-      </section>
-
-      <section class="pair__container">
-        <div class="pair">
-          <img
-            src="/static/assets/images/neosalesign.avif"
-            alt="project image"
-            class="pair__image"
-          />
-          <div class="pair__description">
-            <h1>Lorem Ipsum</h1>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section class="team__container">
-        <h1 class="team__title">Grupo 14</h1>
-        <div class="team__cards__container">
-          <div class="card__container">
-            <img
-              src="/static/assets/images/kid.jpg"
-              alt="Carlos photo"
-              class="card__photo"
-            />
-            <h2 class="card__dev__name">Líder Técnico: Nicolás Avella</h2>
-            <h3 class="card__dev__role">Rol</h3>
-            <p>
-              Descripción del Perfil Técnico: Nicolás Avella es responsable de liderar el equipo desde
-               el punto de vista técnico, trabajando con tecnologías web como JavaScript, HTML y CSS. 
-               Tiene un profundo conocimiento de estas tecnologías, así como de frameworks y
-                bibliotecas relacionadas . Coordina las actividades de
-                 desarrollo, asegura la calidad del código, establece estándares de codificación 
-                 y toma decisiones técnicas para resolver problemas y optimizar el rendimiento del
-                  sistema.
-            </p>
-            <div class="languages__container">
-              <img
-                src="/static/assets/images/ask.png"
-                width="62px"
-                height="59px"
-                alt="java logo"
-              />
-            </div>
-          </div>
-          <div class="card__container">
-            <img
-              src="/static/assets/images/kid2.jpg"
-              alt="Carlos photo"
-              class="card__photo"
-            />
-            <h2 class="card__dev__name">Líder de Planificación: Lara Salcedo</h2>
-            <h3 class="card__dev__role">Rol</h3>
-            <p>
-              : Lara Salcedo es responsable de la planificación y coordinación de las actividades 
-              del proyecto, utilizando herramientas de gestión de proyectos y planificación basadas en
-               la web. Trabaja estrechamente con el equipo para establecer plazos, asignar recursos y 
-               garantizar que el proyecto avance según lo planeado. Tiene habilidades en gestión de
-                proyectos y comunicación efectiva para mantener informados a los stakeholders sobre el
-                 progreso del proyecto.
-            </p>
-            <div class="languages__container">
-              <img
-                src="/static/assets/images/ask.png"
-                width="62px"
-                height="59px"
-                alt="java logo"
-              />
-            </div>
-          </div>
-          <div class="card__container">
-            <img
-              src="/grupo14/imagenes/valentinaLeon.jpg"
-              alt="Carlos photo"
-              class="card__photo"
-            />
-            <h2 class="card__dev__name">Valentina León</h2>
-            <h3 class="card__dev__role">Rol</h3>
-            <p>
-              Laura Montero y Valentina son responsables de garantizar la calidad del software
-               mediante pruebas exhaustivas utilizando JavaScript, HTML y CSS. Desarrollan estrategias 
-               de pruebas, crean casos de prueba y realizan pruebas manuales utilizando herramientas 
-               como git. Además, tienen conocimientos básicos de herramientas de gestión de pruebas y 
-               control de versiones. Trabajan en estrecha colaboración con el equipo de desarrollo 
-               para identificar y resolver problemas de calidad del software.
-            </p>
-            <div class="languages__container">
-              <img
-                src="/static/assets/images/ask.png"
-                width="62px"
-                height="59px"
-                alt="java logo"
-              />
-            </div>
-          </div>
-          <div class="card__container">
-            <img
-              src="/static/assets/images/kid.jpg"
-              alt="Carlos photo"
-              class="card__photo"
-            />
-            <h2 class="card__dev__name">Laura Montero</h2>
-            <h3 class="card__dev__role">Rol</h3>
-            <p>
-              Laura Montero y Valentina son responsables de garantizar la calidad del software
-               mediante pruebas exhaustivas utilizando JavaScript, HTML y CSS. Desarrollan estrategias 
-               de pruebas, crean casos de prueba y realizan pruebas manuales utilizando herramientas 
-               como git. Además, tienen conocimientos básicos de herramientas de gestión de pruebas y 
-               control de versiones. Trabajan en estrecha colaboración con el equipo de desarrollo 
-               para identificar y resolver problemas de calidad del software.
-            </p>
-            <div class="languages__container">
-              <img
-                src="/static/assets/images/ask.png"
-                width="62px"
-                height="59px"
-                alt="java logo"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer>
-      <div class="footer__container__icons">
-        <div class="name__logo__container">
-          <div class="logo"></div>
-          <a href="">
-            <h1>Grupo 14</h1> <!-- FALTA LINK NO SE A QUE VA-->
-          </a>
-        </div>
-        <a
-          href=""
-          target="_blank"
-        >
-          <img src="/static/assets/images/Github.svg" alt="GitHub logo" />
-        </a>
-      </div>
-      <hr />
-      <h2 class="copyright">© 2024 Grupo 14, Inc. All rights reserved.</h2>
-    </footer>
-  </body>
+        <a href="contactenos.html" class="link">Contactenos</a>    
+    </nav>
+  </header>
+  <main>
+    Juan Nicolas Avella Barragán
+    Angie Valentina León Gonzalez
+    Lara Salcedo Franco
+    Laura Isabel Montero Blanco
+    <!-- Content goes here -->
+  </main>
+</body>
 </html>
