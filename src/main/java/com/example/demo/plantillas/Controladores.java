@@ -26,26 +26,26 @@ public class Controladores {
     }
     @GetMapping("/architecture")
     public String controlador2(){
-        return"architecture";
+        return"architecture.html";
     }
     @GetMapping("/deployment")
     public String  controladores3(){
         
-        return"deployment";
+        return"deployment.html";
     }
 
     @GetMapping("/for-development")
     public String controladores4(){
-        return"for-development";
+        return"for-development.html";
     }
     @GetMapping("/form")
     public String controladores5(){
-        return"form";
+        return"form.html";
     }
 
     @GetMapping("/index")
     public String controladores6(){
-        return"index";
+        return"index.html";
     }
 
     @GetMapping("/project-description")
@@ -55,12 +55,12 @@ public class Controladores {
 
     @GetMapping("/requirements")
     public String controladores8(){
-        return"requirements";
+        return"requirements.html";
     }
 
     @GetMapping("/tests")
     public String controladores9(){
-        return"tests";
+        return"tests.html";
     }
 
     @PostMapping("/submit")
