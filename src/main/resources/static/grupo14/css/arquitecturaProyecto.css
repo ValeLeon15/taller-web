@@ -5,7 +5,7 @@
   width: 100%;
   height: 100vh;
   align-items: center;
-  background-image: url("../assets/images/architectural.jpg");
+  background-image: url("/grupo14/imagenes/architectural.jpg");
   background-size: cover;
   background-position: center;
 }

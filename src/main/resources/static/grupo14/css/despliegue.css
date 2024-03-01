@@ -20,7 +20,7 @@ body {
       rgba(13, 27, 42, 0.2) 0%,
       rgba(13, 27, 42, 0.2) 100%
     ),
-    url("../assets/images/wall3.jpg"), rgb(152, 38, 167) 50% / cover;
+    url("/grupo14/imagenes/wall3.jpg"), rgb(152, 38, 167) 50% / cover;
 }
 
 .banner__container__description {
@@ -69,6 +69,6 @@ body {
   width: 30rem;
   height: 30rem;
   flex-shrink: 0;
-  background: url("../assets/images/deployment.png") center/cover;
+  background: url("/grupo14/imagenes/deployment.png") center/cover;
 }
 

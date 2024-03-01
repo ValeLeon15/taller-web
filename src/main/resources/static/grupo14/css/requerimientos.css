@@ -6,7 +6,7 @@ body {
 /* Classes */
 
 .banner__container {
-  background: url("../assets/images/purplebanner.webp") center / cover
+  background: url("/grupo14/imagenes/purplebanner.webp") center / cover
     no-repeat;
   height: 90vh;
   display: flex;

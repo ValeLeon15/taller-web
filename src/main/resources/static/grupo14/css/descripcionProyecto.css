@@ -20,7 +20,7 @@ body {
       rgba(13, 27, 42, 0.2) 0%,
       rgba(13, 27, 42, 0.2) 100%
     ),
-    url("../assets/images/wall1.jpg"), rgb(137, 58, 147) 50% / cover;
+    url("/grupo14/imagenes/wall1.jpg"), rgb(137, 58, 147) 50% / cover;
 }
 
 .banner__container__description {
@@ -67,7 +67,7 @@ body {
   width: 100%;
   height: 37rem;
   border-radius: 3.125rem;
-  background: url("../assets/images/wall2.jpg");
+  background: url("/grupo14/imagenes/wall2.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
