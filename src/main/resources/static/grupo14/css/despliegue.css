@@ -1,7 +1,4 @@
-/* Styles to tags */
-body {
-  background-color: #331138;
-}
+
 
 /* Classes */
 
@@ -15,12 +12,6 @@ body {
   gap: 0.625rem;
   flex-shrink: 0;
   box-sizing: border-box;
-  background: linear-gradient(
-      0deg,
-      rgba(13, 27, 42, 0.2) 0%,
-      rgba(13, 27, 42, 0.2) 100%
-    ),
-    url("/grupo14/imagenes/wall3.jpg"), rgb(152, 38, 167) 50% / cover;
 }
 
 .banner__container__description {
@@ -42,12 +33,7 @@ body {
   box-sizing: border-box;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(
-    180deg,
-    #1b263b 0%,
-    rgba(255, 169, 249, 0.938) 0.01%,
-    rgba(255, 255, 255, 0) 100%
-  );
+  background: linear-gradient(#73267f, #331138);
 }
 
 .deployment__container__items {

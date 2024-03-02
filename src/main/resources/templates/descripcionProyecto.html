@@ -6,6 +6,8 @@
 
     <link rel="manifest" href="/grupo14/css/site.webmanifest" />
     <link rel="stylesheet" href="/grupo14/css/main.css" />
+    <link rel="stylesheet" href="/grupo14/css/styles.css" />
+    <link rel="stylesheet" href="/grupo14/css/barra.css" />
     <link rel="stylesheet" href="/grupo14/css/descripcionProyecto.css" />
     <title>ArriendaTuFinca</title>
   </head>
@@ -19,10 +21,21 @@
             <h1>Grupo 14</h1>
           </a>
         </div>
-        <nav class="navBar">
-          <a href="/grupo14/control/presentacionEquipo">Nosotros</a>
-          <a href="/grupo14/control/descripcionProyecto">Proyecto</a>
-          <a href="/grupo14/formControl/form">Contáctanos</a>
+        <nav> <!-- barra de inicio-->
+          <a href="/grupo14/control/presentacionEquipo" class="link">Nosotros</a>
+          <div class="link">
+            <a href="/grupo14/control/descripcionProyecto"class="link">Proyecto</a>
+            <div class="submenu">
+              <a href="/grupo14/control/descripcionProyecto">Descripción del proyecto</a>
+              <a href="/grupo14/control/requerimientos">Requerimientos</a>
+              <a href="/grupo14/control/paraDesarrollo">Para desarrollo</a>
+              <a href="/grupo14/control/pruebas">Pruebas</a>
+              <a href="/grupo14/control/despliegue">Despliegue</a>
+              <a href="/grupo14/control/arquitectura">Arquitectura proyecto</a>
+              <a href="/grupo14/control/index">Indice</a>
+            </div>
+          </div>
+          <a href="/grupo14/formControl/form"class="link">Contáctanos</a>
         </nav>
       </div>
     </header>

@@ -28,7 +28,8 @@
     <link rel="stylesheet" href="/grupo14/css/header.css" />
     <link rel="stylesheet" href="/grupo14/css/footer.css" />
     <link rel="stylesheet" href="/grupo14/css/pair.css" />
-    <link rel="stylesheet" href="/grupo14/templates/presentacionEquipo.css" />
+    <link rel="stylesheet" href="/grupo14/css/barra.css" />
+    <link rel="stylesheet" href="/grupo14/css/presentacionEquipo.css" />
 
     <title>Nosotros</title>
   </head>
@@ -37,17 +38,25 @@
       <div class="header__container">
         <div class="name__logo__container">
           <div class="logo"></div>
-          <a href="/templates/index.html">
+          <a href="/grupo14/templates/index.html">
             <h1>Arrienda tu casa</h1>
           </a>
         </div>
-        <nav class="navBar">
-          <a href="/grupo14/control/presentacionEquipo">Nosotros</a>
-          <a href="/grupo14/control/descripcionProyecto">Proyecto</a>
-          <a href="/grupo14/formControl/form">Contáctanos</a>
-          <!--<a th:href="/grupo14/controllers/about-us">Nosotros</a>
-          <a th:href="/grupo14/controllers/project-description">Proyecto</a>
-          <a th:href="/grupo14/controllers/form">Contáctanos</a>-->
+        <nav> <!-- barra de inicio-->
+          <a href="/grupo14/control/presentacionEquipo" class="link">Nosotros</a>
+          <div class="link">
+            <a href="/grupo14/control/descripcionProyecto"class="link">Proyecto</a>
+            <div class="submenu">
+              <a href="/grupo14/control/descripcionProyecto">Descripción del proyecto</a>
+              <a href="/grupo14/control/requerimientos">Requerimientos</a>
+              <a href="/grupo14/control/paraDesarrollo">Para desarrollo</a>
+              <a href="/grupo14/control/pruebas">Pruebas</a>
+              <a href="/grupo14/control/despliegue">Despliegue</a>
+              <a href="/grupo14/control/arquitectura">Arquitectura proyecto</a>
+              <a href="/grupo14/control/index">Indice</a>
+            </div>
+          </div>
+          <a href="/grupo14/formControl/form"class="link">Contáctanos</a>
         </nav>
       </div>
     </header>
@@ -152,14 +161,7 @@
                 proyectos y comunicación efectiva para mantener informados a los stakeholders sobre el
                  progreso del proyecto.
             </p>
-            <div class="languages__container">
-              <img
-                src="/grupo14/imagenes/ask.png"
-                width="62px"
-                height="59px"
-                alt="java logo"
-              />
-            </div>
+            
           </div>
           <div class="card__container">
             <img
@@ -177,14 +179,7 @@
                control de versiones. Trabajan en estrecha colaboración con el equipo de desarrollo 
                para identificar y resolver problemas de calidad del software.
             </p>
-            <div class="languages__container">
-              <img
-                src="/grupo14/imagenes/ask.png"
-                width="62px"
-                height="59px"
-                alt="java logo"
-              />
-            </div>
+            
           </div>
           <div class="card__container">
             <img
@@ -202,14 +197,6 @@
                control de versiones. Trabajan en estrecha colaboración con el equipo de desarrollo 
                para identificar y resolver problemas de calidad del software.
             </p>
-            <div class="languages__container">
-              <img
-                src="/grupo14/imagenes/ask.png"
-                width="62px"
-                height="59px"
-                alt="java logo"
-              />
-            </div>
           </div>
         </div>
       </section>
