@@ -15,7 +15,7 @@
 }
 
 .banner__container__description {
-  color: #e0e1dd;
+  color: #cc6cc5;
   text-align: center;
   font-family: Poppins;
   font-size: 3vmax;
@@ -37,7 +37,7 @@
 }
 
 .deployment__container__items {
-  color: #e0e1dd;
+  color: #d673c1;
   font-family: Poppins;
   font-size: 1.5625rem;
   font-style: normal;
