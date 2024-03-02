@@ -10,6 +10,6 @@ public class paraDesarrolloController {
 
     @GetMapping("/paraDesarrollo")
     public String paraDesarrollo(){
-        return"paraDesarrollo.html";
+        return ("paraDesarrollo.html");
     }
 }

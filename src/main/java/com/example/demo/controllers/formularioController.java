@@ -17,8 +17,8 @@ public class formularioController {
     private IContactoService contactoService;
 
     @GetMapping("/form")
-    public String controlador(){
-        return"form.html";
+    public String form(){
+        return("form.html");
     }
     @PostMapping("/submit")
     public String guardar(@ModelAttribute Contacto contacto){

@@ -9,9 +9,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 @RequestMapping ("/grupo14/control")
 public class despliegueController {
- @GetMapping("/despliegueController ")
- public String despliegue(){
-    return ("despliegue.html");
- }
+
+   @GetMapping("/despliegue")
+   public String despliegue(){
+      return ("despliegue.html");
+   }
 
 }  
