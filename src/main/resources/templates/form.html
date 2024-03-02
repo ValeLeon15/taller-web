@@ -3,31 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="/static/assets/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="/static/assets/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="/static/assets/favicon-16x16.png"
-    />
-    <link rel="manifest" href="/static/assets/site.webmanifest" />
-
-    <link rel="stylesheet" href="/static/styles/normalize.css" />
-    <link rel="stylesheet" href="/static/styles/common/header.css" />
-    <link rel="stylesheet" href="/static/styles/common/footer.css" />
-    <link rel="stylesheet" href="/static/styles/common/button.css" />
-    <link rel="stylesheet" href="/static/styles/form.css" />
+    <link rel="manifest" href="/grupo14/site.webmanifest" />
+    <link rel="stylesheet" href="/grupo14/css/main.css" />
+    <link rel="stylesheet" href="/grupo14/css/form.css" />
     <title>Contactanos</title>
   </head>
 
@@ -36,14 +14,14 @@
       <div class="header__container">
         <div class="name__logo__container">
           <div class="logo"></div>
-          <a href="/static/index.html">
+          <a href="/grupo14/templates/index.html">
             <h1>Grupo 14</h1>
           </a>
         </div>
         <nav class="navBar">
-          <a href="./about-us.html">Nosotros</a>
-          <a href="./project-description.html">Proyecto</a>
-          <a href="./form.html">Contáctanos</a>
+          <a href="/grupo14/control/presentacionEquipo">Nosotros</a>
+          <a href="/grupo14/control/descripcionProyecto">Proyecto</a>
+          <a href="/grupo14/formControl/form">Contáctanos</a>
         </nav>
       </div>
     </header>
@@ -60,7 +38,7 @@
     <section class="form__container">
       <div class="form__card">
         <h1>Ponte en contacto</h1>
-        <form action="/grupo14/controllers/submit" th:object="${Contacto}" class="form__questions" method="POST">
+        <form action="/grupo14/formControl/submit" th:object="${Contacto}" class="form__questions" method="POST">
           <label class="form__label" for="">Nombres</label>
           <input
             class="form__input"
@@ -120,12 +98,12 @@
           href="https://github.com/ValeLeon15/taller-web"
           target="_blank"
         >
-          <img src="/static/assets/images/Github.svg" alt="GitHub logo" />
+          <img src="/grupo14/imagenes/Github.svg" alt="GitHub logo" />
         </a>
       </div>
       <hr />
       <h2 class="copyright">© 2024 Grupo 14, Inc. All rights reserved.</h2>
     </footer>
   </body>
-  <script src="/static/scripts/form.js"></script>
+  <script src="/grupo14/js/form.js"></script>
 </html>
