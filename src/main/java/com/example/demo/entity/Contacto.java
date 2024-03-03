@@ -22,7 +22,7 @@ import lombok.Setter;
 public class Contacto {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;    
+    private long id;
     private String nombre;
     private String apellido;
     private String correo;
