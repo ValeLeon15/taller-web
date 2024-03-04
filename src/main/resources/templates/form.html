@@ -52,49 +52,17 @@
         <h1>Ponte en contacto</h1>
         <form action="/grupo14/formControl/submit" class="form__questions" method="POST">
           <label class="form__label" for="">Nombres</label>
-          <input
-            class="form__input"
-            id="nombre"
-            type="text"
-            name = "nombre"
-            placeholder="Pablo"
-          />
+          #<p id="error-nombre"></p>
+          <input class="form__input" id="nombre" type="text" name = "nombre" placeholder="Pablo" required maxlength="100"></input>
           <label class="form__label" for="">Apellidos</label>
-          <input
-            class="form__input"
-            id="apellido"
-            type="text"
-            name = "apellido"
-            placeholder="Marquez"
-          />
+          <input class="form__input" id="apellido" type="text" name = "apellido" placeholder="Marquez" required maxlength="100"></input>
           <label class="form__label" for="">Correo</label>
-          <input
-            class="form__input"
-            id="correo"
-            type="text"
-            name = "correo"
-            placeholder="JhonDoe@email.com"
-          />
+          <input class="form__input" id="correo" type="text" name = "correo" placeholder="JhonDoe@email.com" required maxlength="100"></input>
           <label class="form__label" for="">Semestre</label>
-          <input
-            class="form__input"
-            id="semestre"
-            type="text"
-            name = "semestre"
-            placeholder="Semestre entre 1 y 16"
-          />
+          <input class="form__input" id="semestre" type="text" name = "semestre" placeholder="Semestre entre 1 y 16" ></input>
           <label class="form__label" for="">Descripción</label>
-          <textarea
-            class="form__textarea"
-            name="descripcion"
-            id="descripcion"
-            cols="30"
-            rows="10"
-            placeholder="Escribe tu mensaje"
-          ></textarea>
-          <button class="button__container" type="submit" id="submission">
-            Enviar
-          </button>
+          <textarea class="form__textarea" name="descripcion" id="descripcion" cols="30" rows="10" placeholder="Escribe tu mensaje"></textarea>
+          <button class="button__container" type="submit" id="submission"> Enviar</button>
         </form>
       </div>
     </section>
