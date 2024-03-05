@@ -124,16 +124,13 @@ document.addEventListener("DOMContentLoaded", function() {
       return false;
     }
 
-    // Continue with form submission logic if needed
-
-    // Example: document.querySelector(".form__questions").submit();
+      
     
-    // Show confirmation message
     alert("¡Formulario válido! La información ha sido enviada correctamente.");
     charCountDisplay.innerText = "";
     charCountDisplay.style.color = "green";
 
-    // Reset form values
+    
     nombresInput.value = "";
     apellidosInput.value = "";
     correoInput.value = "";
