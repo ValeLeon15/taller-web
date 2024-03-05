@@ -44,12 +44,6 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-.form__card {
-  width: 60%;
-  background-color: #46194e;
-  border-radius: 3.125rem;
-}
-
 .form__card h1 {
   font-size: 3rem;
   color: #778da9;

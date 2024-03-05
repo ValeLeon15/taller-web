@@ -119,7 +119,7 @@ document.addEventListener("DOMContentLoaded", function() {
     event.preventDefault(); // Prevent form submission for now
 
     if (!validateForm()) {
-      charCountDisplay.innerText = "Revisa los campos resaltados en rojo.";
+      charCountDisplay.innerText = " ";
       charCountDisplay.style.color = "red";
       return false;
     }
