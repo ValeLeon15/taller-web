@@ -16,7 +16,7 @@
 }
 
 .pair__description .banner__title {
-  color: #503aa7;
+  color: #ff6347; /* Red color for title */
   font-size: 2.25rem;
   align-self: center;
 }
@@ -28,34 +28,34 @@
 }
 
 .title__container p {
-  color: #3a3b3c;
+  color: #696969; /* Dim gray color for paragraph */
   text-align: center;
-  font-family: Poppins;
+  font-family: Arial, sans-serif; /* Changed font family */
   font-size: 1.5rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
+  font-style: italic; /* Changed font style */
+  font-weight: 400; /* Changed font weight */
+  line-height: 1.5; /* Adjusted line height */
 }
 
 .pair__description .title {
-  color: #45b7ff;  /*titulos de diagramas*/
+  color: #00ced1; /* Dark turquoise color for titles */
 }
 
 /* Large Desktop (Bigger than 1440px) */
 @media (min-width: 1440px) {
   .pair__description .banner__title {
-    color: #503aa7;
+    color: #8a2be2; /* Blue Violet color for title */
     font-size: 4rem;
     align-self: center;
   }
 
   .title__container p {
-    color: #d3d7dc;
+    color: #32cd32; /* Lime Green color for paragraph */
     text-align: center;
-    font-family: Poppins;
+    font-family: Georgia, serif; /* Changed font family */
     font-size: 2rem;
     font-style: normal;
     font-weight: 700;
-    line-height: normal;
+    line-height: 1.8; /* Adjusted line height */
   }
 }
