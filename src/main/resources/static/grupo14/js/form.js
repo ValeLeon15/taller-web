@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
   var nombresInput = document.getElementById("nombre");
-  var apellidosInput = document.getElementById("appellido");
+  var apellidosInput = document.getElementById("apellido");
   var correoInput = document.getElementById("correo");
   var semestreInput = document.getElementById("semestre");
   var descripcionTextarea = document.getElementById("descripcion");
@@ -20,7 +20,8 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   }
 
-  function validarNombre() {
+  function validateName() {
+    console.log("Validating name...");
     var name = nombresInput.value;
     if (name === "") {
       alert("Por favor, ingrese su nombre.");
@@ -34,6 +35,7 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 
   function validateLastName() {
+    console.log("Validating last name...");
     var lastName = apellidosInput.value;
     if (lastName === "") {
       alert("Por favor, ingrese sus apellidos.");
@@ -47,6 +49,7 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 
   function validateEmail() {
+    console.log("Validating email...");
     var email = correoInput.value.toUpperCase();
     var re = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/;
     if (email === "" || !re.test(email)) {
@@ -57,15 +60,17 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 
   function validateSemester() {
+    console.log("Validating semester...");
     var semester = parseInt(semestreInput.value);
-    if (isNaN(semester) || semester < 0 || semester > 16) {
-      alert("El semestre debe ser un número entre 0 y 16.");
+    if (isNaN(semester) || semester < 1 || semester > 16) {
+      alert("El semestre debe ser un número entre 1 y 16.");
       return false;
     }
     return true;
   }
 
   function validateDescription() {
+    console.log("Validating description...");
     var description = descripcionTextarea.value;
     if (description === "") {
       alert("Por favor, ingrese una descripción.");
@@ -85,26 +90,32 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 
   nombresInput.addEventListener("input", function() {
+    console.log("Input event on name field.");
     updateCharCount(nombresInput, 100);
   });
 
   apellidosInput.addEventListener("input", function() {
+    console.log("Input event on last name field.");
     updateCharCount(apellidosInput, 100);
   });
 
   correoInput.addEventListener("input", function() {
+    console.log("Input event on email field.");
     updateCharCount(correoInput, 100);
   });
 
   semestreInput.addEventListener("input", function() {
+    console.log("Input event on semester field.");
     updateCharCount(semestreInput, 2);
   });
 
   descripcionTextarea.addEventListener("input", function() {
+    console.log("Input event on description field.");
     updateCharCount(descripcionTextarea, 500);
   });
 
   document.getElementById("submission").addEventListener("click", function(event) {
+    console.log("Submit button clicked.");
     event.preventDefault(); // Prevent form submission for now
 
     if (!validateForm()) {
