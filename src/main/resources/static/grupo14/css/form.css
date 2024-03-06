@@ -7,14 +7,14 @@
 
 /* Body Styles */
 body {
-  background-color: #eeddff;
+  background-color: #a4f596;
   color: #000;
   font-family: Arial, sans-serif;
 }
 
 /* Header Styles */
 header {
-  background-color: #bc6cc8;
+  background-color: #88e480;
   color: #fff;
   padding: 10px 0;
 }
@@ -45,7 +45,7 @@ nav {
 
 /* Banner Styles */
 .banner__container {
-  background-color: #d3adeb;
+  background-color: #81f899;
   color: #fff;
   padding: 50px 0;
   text-align: center;
@@ -118,12 +118,12 @@ nav {
 }
 
 .button__container:hover {
-  background-color: #d877e7;
+  background-color: #76ee88;
 }
 
 /* Footer Styles */
 footer {
-  background-color: #73267f;
+  background-color: #1a9b54;
   color: #fff;
   padding: 20px 0;
   text-align: center;
