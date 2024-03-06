@@ -14,7 +14,7 @@ body {
 
 /* Header Styles */
 header {
-  background-color: #73267f;
+  background-color: #bc6cc8;
   color: #fff;
   padding: 10px 0;
 }
@@ -45,7 +45,7 @@ nav {
 
 /* Banner Styles */
 .banner__container {
-  background-color: #a986bf;
+  background-color: #d3adeb;
   color: #fff;
   padding: 50px 0;
   text-align: center;
@@ -109,7 +109,7 @@ nav {
 
 .button__container {
   padding: 10px 20px;
-  background-color: #73267f;
+  background-color: #da74ea;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -118,7 +118,7 @@ nav {
 }
 
 .button__container:hover {
-  background-color: #5a1d63;
+  background-color: #d877e7;
 }
 
 /* Footer Styles */
