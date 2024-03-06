@@ -3,27 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="manifest" href="/grupo14/site.webmanifest" />
     <link rel="stylesheet" href="/grupo14/css/main.css" />
-    <link rel="stylesheet" href="/grupo14/css/barra.css" />
     <link rel="stylesheet" href="/grupo14/css/form.css" />
     <title>Contactanos</title>
-    <script src="/grupo14/js/form.js"></script>
   </head>
 
   <body>
     <header>
       <div class="header__container">
-        <div class="name__logo__container">
-          <div class="logo"></div>
-          <a href="/grupo14/templates/index.html">
-            <h1>Grupo 14</h1>
-          </a>
-        </div>
-        <nav> <!-- barra de inicio-->
+        <h1 class="logo">Grupo 14</h1>
+        <nav>
           <a href="/grupo14/control/presentacionEquipo" class="link">Nosotros</a>
           <div class="link">
-            <a href="/grupo14/control/descripcionProyecto"class="link">Proyecto</a>
+            <a href="/grupo14/control/descripcionProyecto" class="link">Proyecto</a>
             <div class="submenu">
               <a href="/grupo14/control/descripcionProyecto">Descripción del proyecto</a>
               <a href="/grupo14/control/requerimientos">Requerimientos</a>
@@ -34,7 +26,7 @@
               <a href="/grupo14/control/index">Indice</a>
             </div>
           </div>
-          <a href="/grupo14/formControl/form"class="link">Contáctanos</a>
+          <a href="/grupo14/formControl/form" class="link">Contáctanos</a>
         </nav>
       </div>
     </header>
@@ -42,9 +34,7 @@
     <section class="banner__container">
       <div class="banner__container__description">
         <h1>Formulario</h1>
-        <p>
-          Llena el formulario con tu información por favor.
-        </p>
+        <p>Llena el formulario con tu información por favor.</p>
       </div>
     </section>
 
@@ -52,31 +42,23 @@
       <div class="form__card">
         <form action="/grupo14/formControl/submit" class="form__questions" method="POST">
           <label class="form__label" for="">Nombres</label>
-          <input class="form__input" id="nombre" type="text" name = "nombre" placeholder="Pablo" required maxlength="100"></input>
+          <input class="form__input" id="nombre" type="text" name="nombre" placeholder="Pablo" required maxlength="100" />
           <label class="form__label" for="">Apellidos</label>
-          <input class="form__input" id="apellido" type="text" name = "apellido" placeholder="Marquez" required maxlength="100"></input>
+          <input class="form__input" id="apellido" type="text" name="apellido" placeholder="Marquez" required maxlength="100" />
           <label class="form__label" for="">Correo</label>
-          <input class="form__input" id="correo" type="text" name = "correo" placeholder="JhonDoe@email.com" required maxlength="100"></input>
+          <input class="form__input" id="correo" type="email" name="correo" placeholder="JhonDoe@email.com" required maxlength="100" />
           <label class="form__label" for="">Semestre</label>
-          <input class="form__input" id="semestre" type="text" name = "semestre" placeholder="Semestre entre 1 y 16" ></input>
+          <input class="form__input" id="semestre" type="number" name="semestre" placeholder="Semestre entre 1 y 16" />
           <label class="form__label" for="">Descripción</label>
           <textarea class="form__textarea" name="descripcion" id="descripcion" cols="30" rows="10" placeholder="Escribe tu mensaje"></textarea>
-          <button class="button__container" type="submit" id="submission"> Enviar</button>
+          <button class="button__container" type="submit" id="submission">Enviar</button>
         </form>
       </div>
     </section>
     <footer>
       <div class="footer__container__icons">
-        <div class="name__logo__container">
-          <div class="logo"></div>
-          <a href="">
-            <h1>Grupo 14</h1>
-          </a>
-        </div>
-        <a
-          href="https://github.com/ValeLeon15/taller-web"
-          target="_blank"
-        >
+        <h1 class="logo">Grupo 14</h1>
+        <a href="https://github.com/ValeLeon15/taller-web" target="_blank">
           <img src="/grupo14/imagenes/Github.svg" alt="GitHub logo" />
         </a>
       </div>
@@ -85,3 +67,4 @@
     </footer>
   </body>
 </html>
+
