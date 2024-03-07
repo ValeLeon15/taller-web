@@ -6,11 +6,14 @@ window.onload = function(){
     const apellido = document.getElementById("apellido")
     const errorApellido = document.getElementById("errorApellido")
     const tamanoApellido = document.getElementById("tamanoApellido")
+    const bordeApellido = document.getElementById("bordeApellido")
     const correo = document.getElementById("correo")
     const errorCorreo = document.getElementById("errorCorreo")
     const tamanoCorreo = document.getElementById("tamanoCorreo")
+    const bordeCorreo = document.getElementById("bordeCorreo")
     const semestre = document.getElementById("semestre")
     const errorSemestre = document.getElementById("errorSemestre")
+    const bordeSemestre = document.getElementById("bordeSemestre")
 
     //cuando lleno el formulario, queremos que ejecute esto
     nombre.addEventListener("input", function(){
@@ -30,9 +33,11 @@ window.onload = function(){
         tamanoApellido.textContent =  apellido.value.length + '/100';
         let tipo = "apellido";
         if (apellido.value == parseInt(apellido.value) ||apellido.value.length == 0) {
-        updateError(tipo, "El nombre es obligatorio y no debe ser un entero.");
+            updateError(tipo, "El nombre es obligatorio y no debe ser un entero.");
         }else {
             errorApellido.textContent = '';
+            bordeApellido.style.border="solid";
+            bordeApellido.style.borderColor="green";
         }
     });
 
@@ -53,15 +58,20 @@ window.onload = function(){
         }
         else {
             errorCorreo.textContent = '';
+            bordeCorreo.style.border="solid";
+            bordeCorreo.style.borderColor="green";
         }
     });
 
     semestre.addEventListener("input", function(){
         let tipo = "semestre";
-        if (semestre.value <= 16 && semestre.value >= 0) {
-            updateError(tipo, "El semestre debe ser un número entre 1 y 16.");
-        }else {
+        if (semestre.value >= 0 && semestre.value <= 16) {
             errorSemestre.textContent = '';
+            bordeSemestre.style.border="solid";
+            bordeSemestre.style.borderColor="green";
+        }else {
+            updateError(tipo, "El semestre debe ser un número entre 1 y 16.");
+
         }
     });
 
@@ -71,12 +81,21 @@ window.onload = function(){
             errorNombre.style.color = "red";
             bordeNombre.style.border="solid";
             bordeNombre.style.borderColor="red";
-        } else if (tipo == "apellido") {
+        } if (tipo == "apellido") {
             errorApellido.textContent = mensaje;
             errorApellido.style.color = "red";
-        }else if (tipo == "correo") {
+            bordeApellido.style.border="solid";
+            bordeApellido.style.borderColor="red";
+        } if (tipo == "correo") {
             errorCorreo.textContent = mensaje;
             errorCorreo.style.color = "red";
+            bordeCorreo.style.border="solid";
+            bordeCorreo.style.borderColor="red";
+        } if (tipo == "semestre") {
+            errorSemestre.textContent = mensaje;
+            errorSemestre.style.color = "red";
+            bordeSemestre.style.border="solid";
+            bordeSemestre.style.borderColor="red";
         }
     }
 

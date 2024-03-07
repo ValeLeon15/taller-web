@@ -27,7 +27,7 @@ public class formularioController {
     
     @PostMapping("/submit")
     public String guardar(@ModelAttribute Contacto contacto, Model model){
-        String error="Hubo un error en los datos ingresados.";
+        String error="Hubo un error en los datos ingresados. El formulario no se envio";
         try {
             if(contacto.getNombre().isEmpty() || contacto.getApellido().isEmpty() || contacto.getCorreo().isEmpty() || contacto.getDescripcion().isEmpty())
             {
