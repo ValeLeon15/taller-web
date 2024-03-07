@@ -11,7 +11,7 @@ body {
     width: 100%;
     display: flex;
     align-items: center;
-    background-color: rgb(32, 39, 57);
+    background-color: rgb(228, 131, 220);
     color: #fff;
     padding: 16px;
     position: sticky; /*para que se fije en la parte superior cuando se desplaza hacia abajo*/
@@ -74,6 +74,7 @@ body {
   }
   
   .submenu a {
+
     margin-left: 16px;
     transition: 1s all;
     display: block;
