@@ -3,6 +3,7 @@ package com.example.demo.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -24,11 +25,26 @@ public class formularioController {
     }
     
     @PostMapping("/submit")
-    public String guardar(@ModelAttribute Contacto contacto){
-        
+    public String guardar(@ModelAttribute Contacto contacto, Model model){
         try {
-            contactoService.save(contacto);
-            System.out.println("Se guardo el contacto con exito");
+            if(contacto.getNombre().isEmpty() || contacto.getApellido().isEmpty() || contacto.getCorreo().isEmpty() || contacto.getDescripcion().isEmpty())
+             {
+                System.out.println("Error guardando contacto");
+                return "form.html";
+            }
+            else if(contacto.getNombre().matches(".*\\d.*") == true || contacto.getApellido().matches(".*\\d.*") == true)
+            {
+                System.out.println("Error guardando contacto");
+                return "form.html";
+            }
+            else if(contacto.getCorreo().matches("^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$") == false|| contacto.getCorreo().matches(".*[A-Z].*") == false)
+            {
+                System.out.println("Error guardando contacto");
+                return "form.html";
+            } else{
+                System.out.println("Se guardo el contacto con exito");
+                contactoService.save(contacto);
+            }
         } catch (Exception e) {
             
             System.out.println("Error guardando contacto");

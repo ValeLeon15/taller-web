@@ -1,143 +1,84 @@
-document.addEventListener("DOMContentLoaded", function() {
-  var nombresInput = document.getElementById("nombre");
-  var apellidosInput = document.getElementById("apellido");
-  var correoInput = document.getElementById("correo");
-  var semestreInput = document.getElementById("semestre");
-  var descripcionTextarea = document.getElementById("descripcion");
+window.onload = function(){
+    const nombre = document.getElementById("nombre")
+    const errorNombre = document.getElementById("errorNombre")
+    const tamanoNombre = document.getElementById("tamanoNombre")
+    const bordeNombre = document.getElementById("bordeNombre")
+    const apellido = document.getElementById("apellido")
+    const errorApellido = document.getElementById("errorApellido")
+    const tamanoApellido = document.getElementById("tamanoApellido")
+    const correo = document.getElementById("correo")
+    const errorCorreo = document.getElementById("errorCorreo")
+    const tamanoCorreo = document.getElementById("tamanoCorreo")
+    const semestre = document.getElementById("semestre")
+    const errorSemestre = document.getElementById("errorSemestre")
 
-  var charCountDisplay = document.createElement("div");
-  charCountDisplay.style.color = "green";
-  charCountDisplay.style.marginTop = "5px";
-  document.querySelector(".form__questions").appendChild(charCountDisplay);
+    //cuando lleno el formulario, queremos que ejecute esto
+    nombre.addEventListener("input", function(){
+        tamanoNombre.textContent =  nombre.value.length + '/100';
+        let tipo = "nombre";
+        if (nombre.value == parseInt(nombre.value) ||nombre.value.length == 0) {
+            updateError(tipo, "El nombre es obligatorio y no debe ser un entero.");
+        }else {
+            errorNombre.textContent = '';
+            bordeNombre.style.border="solid";
+            bordeNombre.style.borderColor="green";
+            
+        }
+    });
 
-  function updateCharCount(input, maxChars) {
-    var charCount = input.value.length;
-    charCountDisplay.innerText = charCount + "/" + maxChars;
-    if (charCount > maxChars) {
-      input.style.borderColor = "red";
-    } else {
-      input.style.borderColor = "";
-    }
-  }
+    apellido.addEventListener("input", function(){
+        tamanoApellido.textContent =  apellido.value.length + '/100';
+        let tipo = "apellido";
+        if (apellido.value == parseInt(apellido.value) ||apellido.value.length == 0) {
+        updateError(tipo, "El nombre es obligatorio y no debe ser un entero.");
+        }else {
+            errorApellido.textContent = '';
+        }
+    });
 
-  function validateName() {
-    console.log("Validating name...");
-    var name = nombresInput.value;
-    if (name === "") {
-      alert("Por favor, ingrese su nombre.");
-      return false;
-    }
-    if (name.length > 100) {
-      alert("El nombre no puede tener más de 100 caracteres.");
-      return false;
-    }
-    return true;
-  }
+    //ahora Correo: Obligatorio, 100 caracteres. , que tenga el caracter ‘@’ y después de ese caracter por lo menos un punto, no debe tener espacios y nada de caracteres espaciales como tildes, ñ, todo debe estar escrito en mayúsculas.
+    correo.addEventListener("input", function(){
+        tamanoCorreo.textContent =  correo.value.length + '/100';
+        let tipo = "correo";
+        if (correo.value.length == 0) {
+            updateError(tipo, "El correo es obligatorio.");
+        }else if (correo.value.length > 100) {
+            updateError(tipo, "El correo no debe tener más de 100 caracteres.");
+        }else if (correo.value.includes(" ")) {
+            updateError(tipo, "El correo no debe tener espacios.");
+        }else if (!correo.value.includes("@") || !correo.value.includes(".")) {
+            updateError(tipo, "El correo debe tener un @ y un punto.");
+        } else if(correo.value != correo.value.toUpperCase()){
+            updateError(tipo, "El correo debe estar en mayúsculas.");
+        }
+        else {
+            errorCorreo.textContent = '';
+        }
+    });
 
-  function validateLastName() {
-    console.log("Validating last name...");
-    var lastName = apellidosInput.value;
-    if (lastName === "") {
-      alert("Por favor, ingrese sus apellidos.");
-      return false;
-    }
-    if (lastName.length > 100) {
-      alert("Los apellidos no pueden tener más de 100 caracteres.");
-      return false;
-    }
-    return true;
-  }
+    semestre.addEventListener("input", function(){
+        let tipo = "semestre";
+        if (semestre.value <= 16 && semestre.value >= 0) {
+            updateError(tipo, "El semestre debe ser un número entre 1 y 16.");
+        }else {
+            errorSemestre.textContent = '';
+        }
+    });
 
-  function validateEmail() {
-    console.log("Validating email...");
-    var email = correoInput.value.toUpperCase();
-    var re = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/;
-    if (email === "" || !re.test(email)) {
-      alert("Por favor, ingrese una dirección de correo electrónico válida.");
-      return false;
-    }
-    return true;
-  }
-
-  function validateSemester() {
-    console.log("Validating semester...");
-    var semester = parseInt(semestreInput.value);
-    if (isNaN(semester) || semester < 1 || semester > 16) {
-      alert("El semestre debe ser un número entre 1 y 16.");
-      return false;
-    }
-    return true;
-  }
-
-  function validateDescription() {
-    console.log("Validating description...");
-    var description = descripcionTextarea.value;
-    if (description === "") {
-      alert("Por favor, ingrese una descripción.");
-      return false;
-    }
-    return true;
-  }
-
-  function validateForm() {
-    var isNameValid = validateName();
-    var isLastNameValid = validateLastName();
-    var isEmailValid = validateEmail();
-    var isSemesterValid = validateSemester();
-    var isDescriptionValid = validateDescription();
-
-    return isNameValid && isLastNameValid && isEmailValid && isSemesterValid && isDescriptionValid;
-  }
-
-  nombresInput.addEventListener("input", function() {
-    console.log("Input event on name field.");
-    updateCharCount(nombresInput, 100);
-  });
-
-  apellidosInput.addEventListener("input", function() {
-    console.log("Input event on last name field.");
-    updateCharCount(apellidosInput, 100);
-  });
-
-  correoInput.addEventListener("input", function() {
-    console.log("Input event on email field.");
-    updateCharCount(correoInput, 100);
-  });
-
-  semestreInput.addEventListener("input", function() {
-    console.log("Input event on semester field.");
-    updateCharCount(semestreInput, 2);
-  });
-
-  descripcionTextarea.addEventListener("input", function() {
-    console.log("Input event on description field.");
-    updateCharCount(descripcionTextarea, 500);
-  });
-
-  document.getElementById("submission").addEventListener("click", function(event) {
-    console.log("Submit button clicked.");
-    event.preventDefault(); // Prevent form submission for now
-
-    if (!validateForm()) {
-      charCountDisplay.innerText = " ";
-      charCountDisplay.style.color = "red";
-      return false;
+    function updateError(tipo, mensaje) {
+        if (tipo == "nombre") {
+            errorNombre.textContent = mensaje;
+            errorNombre.style.color = "red";
+            bordeNombre.style.border="solid";
+            bordeNombre.style.borderColor="red";
+        } else if (tipo == "apellido") {
+            errorApellido.textContent = mensaje;
+            errorApellido.style.color = "red";
+        }else if (tipo == "correo") {
+            errorCorreo.textContent = mensaje;
+            errorCorreo.style.color = "red";
+        }
     }
 
-    // Continue with form submission logic if needed
 
-    // Example: document.querySelector(".form__questions").submit();
-    
-    // Show confirmation message
-    alert("¡Formulario válido! La información ha sido enviada correctamente.");
-    charCountDisplay.innerText = "";
-    charCountDisplay.style.color = "green";
-
-    // Reset form values
-    nombresInput.value = "";
-    apellidosInput.value = "";
-    correoInput.value = "";
-    semestreInput.value = "";
-    descripcionTextarea.value = "";
-  });
-});
+}

@@ -7,11 +7,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 @RequestMapping ("/grupo14/control")
-public class indexController {
+public class bienvenidaController {
 
-   @GetMapping("/index")
+   @GetMapping("/bienvenida")
    public String index(){
-      return ("index.html");
+      return ("bienvenida.html");
    }
 
 }     

@@ -1,87 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="manifest" href="/grupo14/site.webmanifest" />
-    <link rel="stylesheet" href="/grupo14/css/main.css" />
-    <link rel="stylesheet" href="/grupo14/css/barra.css" />
-    <link rel="stylesheet" href="/grupo14/css/form.css" />
-    <title>Contactanos</title>
-    <script src="/grupo14/js/form.js"></script>
-  </head>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel ="stylesheet" href="/grupo14/css/main.css" />
+  <link rel ="stylesheet" href="/grupo14/css/form.css" />
+  <script src="/grupo14/js/form.js"></script>
 
-  <body>
-    <header>
-      <div class="header__container">
-        <div class="name__logo__container">
-          <div class="logo"></div>
-          <a href="/grupo14/templates/index.html">
-            <h1>Grupo 14</h1>
-          </a>
+</head>
+<body>
+	<header>
+    <nav> <!-- barra de inicio-->
+      <a href="/grupo14/control/presentacionEquipo" class="link">Nosotros</a>
+      <div class="link">
+        <a href="/grupo14/control/descripcionProyecto"class="link">Proyecto</a>
+        <div class="submenu">
+          <a href="/grupo14/control/descripcionProyecto">Descripción del proyecto</a>
+          <a href="/grupo14/control/requerimientos">Requerimientos</a>
+          <a href="/grupo14/control/paraDesarrollo">Para desarrollo</a>
+          <a href="/grupo14/control/pruebas">Pruebas</a>
+          <a href="/grupo14/control/despliegue">Despliegue</a>
+          <a href="/grupo14/control/arquitectura">Arquitectura proyecto</a>
+          <a href="/grupo14/control/bienvenida">Bienvenida</a>
         </div>
-        <nav> <!-- barra de inicio-->
-          <a href="/grupo14/control/presentacionEquipo" class="link">Nosotros</a>
-          <div class="link">
-            <a href="/grupo14/control/descripcionProyecto"class="link">Proyecto</a>
-            <div class="submenu">
-              <a href="/grupo14/control/descripcionProyecto">Descripción del proyecto</a>
-              <a href="/grupo14/control/requerimientos">Requerimientos</a>
-              <a href="/grupo14/control/paraDesarrollo">Para desarrollo</a>
-              <a href="/grupo14/control/pruebas">Pruebas</a>
-              <a href="/grupo14/control/despliegue">Despliegue</a>
-              <a href="/grupo14/control/arquitectura">Arquitectura proyecto</a>
-              <a href="/grupo14/control/index">Indice</a>
-            </div>
-          </div>
-          <a href="/grupo14/formControl/form"class="link">Contáctanos</a>
-        </nav>
       </div>
-    </header>
+      <a href="/grupo14/formControl/form"class="link">Contáctanos</a>
+    </nav>
+	</header>
+	<main>
 
-    <section class="banner__container">
-      <div class="banner__container__description">
-        <h1>Formulario</h1>
-        <p>
-          Llena el formulario con tu información por favor.
-        </p>
-      </div>
-    </section>
-
-    <section class="form__container">
-      <div class="form__card">
-        <form action="/grupo14/formControl/submit" class="form__questions" method="POST">
-          <label class="form__label" for="">Nombres</label>
-          <input class="form__input" id="nombre" type="text" name = "nombre" placeholder="Pablo" required maxlength="100"></input>
-          <label class="form__label" for="">Apellidos</label>
-          <input class="form__input" id="apellido" type="text" name = "apellido" placeholder="Marquez" required maxlength="100"></input>
-          <label class="form__label" for="">Correo</label>
-          <input class="form__input" id="correo" type="text" name = "correo" placeholder="JhonDoe@email.com" required maxlength="100"></input>
-          <label class="form__label" for="">Semestre</label>
-          <input class="form__input" id="semestre" type="text" name = "semestre" placeholder="Semestre entre 1 y 16" ></input>
-          <label class="form__label" for="">Descripción</label>
-          <textarea class="form__textarea" name="descripcion" id="descripcion" cols="30" rows="10" placeholder="Escribe tu mensaje"></textarea>
-          <button class="button__container" type="submit" id="submission"> Enviar</button>
-        </form>
-      </div>
-    </section>
-    <footer>
-      <div class="footer__container__icons">
-        <div class="name__logo__container">
-          <div class="logo"></div>
-          <a href="">
-            <h1>Grupo 14</h1>
-          </a>
+		<h1>Contactenos</h1>
+		
+		<form action = "/submit" th:action = "@{submit}" method = "post" id="form">
+			<div>
+        <div id="bordeNombre">
+        <label for="nombre">Nombre:</label>
+			  <input type ="text" id = "nombre" name = "nombre" maxlength ="100" placeholder="Jose Alejandro" required/><br/><br/>
         </div>
-        <a
-          href="https://github.com/ValeLeon15/taller-web"
-          target="_blank"
-        >
-          <img src="/grupo14/imagenes/Github.svg" alt="GitHub logo" />
-        </a>
+        <p id="errorNombre"></p>
+        <p id="tamanoNombre"></p>
       </div>
-      <hr />
-      <h2 class="copyright">grupo14</h2>
-    </footer>
-  </body>
+      <div id="bordeApellido">
+        Apellido
+			  <input type ="text" id = "apellido" name = "apellido" maxlength ="100" placeholder="Rincon Veloza" required/><br/><br/>
+        <p id="errorApellido"></p>
+        <p id="tamanoApellido"></p>
+      </div>
+      <div id="bordeCorreo"> 
+        Correo
+        <input type ="text"  id = "correo" name = "correo" maxlength ="100" placeholder="ejm@gmail.com"required/><br/><br/>
+        <p id="errorCorreo"></p>
+        <p id="tamanoCorreo"></p>
+      </div> 
+      <div id="bordeSemestre">
+        Semestre
+        <input type ="number"  id = 'semestre' name = 'semestre' required/><br/><br/>
+        <p id="errorSemestre"></p>
+      </div> 
+      <div id="bordeDescripcion"> 
+        Descripcion
+        <textarea id = "descripcion" name = "descripcion" required></textarea><br/><br/>
+        <p id="errorDescripcion"></p>
+      </div> 
+      <div>
+			  <input type ='submit' value = 'Enviar'/>
+      </div> 
+    </form>
+    
+    <div id="errorMessages"></div>
+    <p class="warnings" id="warnings"></p>
+	</main>
+</body>
 </html>
