@@ -35,41 +35,48 @@
 		<form action = "/submit" th:action = "@{submit}" method = "post" id="form">
 			<div>
         <div id="bordeNombre">
-        <label for="nombre">Nombre:</label>
-			  <input type ="text" id = "nombre" name = "nombre" maxlength ="100" placeholder="Jose Alejandro" required/><br/><br/>
+          <label for="nombre">Nombre</label>
+          <input type ="text" id = "nombre" name = "nombre" maxlength ="100" placeholder="Jose Alejandro" required/><br/><br/>
         </div>
-        <p id="errorNombre"></p>
+        <p  id="errorNombre" ></p>
         <p id="tamanoNombre"></p>
       </div>
-      <div id="bordeApellido">
-        Apellido
-			  <input type ="text" id = "apellido" name = "apellido" maxlength ="100" placeholder="Rincon Veloza" required/><br/><br/>
+      <div>
+        <div id="bordeApellido">
+          <label for="apellido">Apellido</label>
+          <input type ="text" id = "apellido" name = "apellido" maxlength ="100" placeholder="Rincon Veloza" required/><br/><br/>
+        </div>
         <p id="errorApellido"></p>
         <p id="tamanoApellido"></p>
       </div>
-      <div id="bordeCorreo"> 
-        Correo
-        <input type ="text"  id = "correo" name = "correo" maxlength ="100" placeholder="ejm@gmail.com"required/><br/><br/>
+      <div> 
+        <div id="bordeCorreo">
+          <label for="correo">Correo</label>
+          <input type ="text"  id = "correo" name = "correo" maxlength ="100" placeholder="ejm@gmail.com"required/><br/><br/>
+        </div>
         <p id="errorCorreo"></p>
         <p id="tamanoCorreo"></p>
       </div> 
-      <div id="bordeSemestre">
-        Semestre
-        <input type ="number"  id = 'semestre' name = 'semestre' required/><br/><br/>
+      <div>
+        <div id="bordeSemestre">
+          <label for = "semestre">Semestre</label>
+          <input type ="number"  id = 'semestre' name = 'semestre' required/><br/><br/>
+        </div>
         <p id="errorSemestre"></p>
       </div> 
-      <div id="bordeDescripcion"> 
-        Descripcion
-        <textarea id = "descripcion" name = "descripcion" required></textarea><br/><br/>
+      <div> 
+        <div id="bordeDescripcion">
+          <label for="Descripcion">Descripción</label>
+          <textarea id = "descripcion" name = "descripcion" required></textarea><br/><br/>
+        </div>
         <p id="errorDescripcion"></p>
       </div> 
       <div>
 			  <input type ='submit' value = 'Enviar'/>
       </div> 
+      <p th:text="${error}" th:class="error"></p>
     </form>
     
-    <div id="errorMessages"></div>
-    <p class="warnings" id="warnings"></p>
 	</main>
 </body>
 </html>
