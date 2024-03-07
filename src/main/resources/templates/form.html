@@ -38,7 +38,7 @@
         <label for="nombre">Nombre:</label>
 			  <input type ="text" id = "nombre" name = "nombre" maxlength ="100" placeholder="Jose Alejandro" required/><br/><br/>
         </div>
-        <p id="errorNombre"></p>
+        <p  id="errorNombre" ></p>
         <p id="tamanoNombre"></p>
       </div>
       <div id="bordeApellido">
@@ -66,10 +66,9 @@
       <div>
 			  <input type ='submit' value = 'Enviar'/>
       </div> 
+      <p th:text="${error}" th:class="error"></p>
     </form>
     
-    <div id="errorMessages"></div>
-    <p class="warnings" id="warnings"></p>
 	</main>
 </body>
 </html>
