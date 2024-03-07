@@ -1,0 +1,36 @@
+/* Estilos para los cuadros de los integrantes */
+.integrante {
+    background-color: #FFB6C1; /* Color de fondo rosa claro */
+    border: 2px solid #FF69B4; /* Borde rosa más oscuro */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px;
+    margin-bottom: 20px; /* Espacio inferior entre cuadros */
+    text-align: center; /* Centrar contenido */
+  }
+  
+  /* Estilos para las imágenes de los integrantes */
+  .integrante img {
+    width: 150px; /* Ancho fijo para las imágenes */
+    height: auto; /* Altura automática para mantener la proporción */
+    border-radius: 10px; /* Bordes redondeados */
+    margin-bottom: 15px; /* Espacio inferior entre la imagen y la descripción */
+  }
+  
+  /* Estilos para los títulos de los integrantes */
+  .integrante h2 {
+    color: #FF69B4; /* Color rosa oscuro */
+    margin-bottom: 5px; /* Espacio inferior */
+  }
+  
+  /* Estilos para los roles de los integrantes */
+  .integrante h3 {
+    color: #FF69B4; /* Color rosa oscuro */
+    margin-bottom: 10px; /* Espacio inferior */
+  }
+  
+  /* Estilos para las descripciones de los integrantes */
+  .integrante p {
+    color: #333; /* Color de texto negro */
+    font-size: 14px; /* Tamaño de fuente */
+    line-height: 1.5; /* Espaciado entre líneas */
+  }
