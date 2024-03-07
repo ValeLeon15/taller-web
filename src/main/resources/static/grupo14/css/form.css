@@ -1,3 +1,44 @@
 .error {
     color: red;
 }
+/* Estilos para el formulario */
+form {
+    background-color:rgb(241, 155, 208); /* Color de fondo rosa */
+    padding: 20px;
+    border-radius: 10px; /* Bordes redondeados */
+    max-width: 400px; /* Ancho máximo del formulario */
+    margin: 0 auto; /* Centrar horizontalmente */
+}
+
+/* Estilos para los campos de entrada */
+input[type="text"],
+input[type="number"],
+textarea {
+    width: 100%; /* Ancho completo */
+    padding: 10px; /* Espaciado interno */
+    margin-bottom: 15px; /* Espacio inferior entre campos */
+    border-radius: 5px; /* Bordes redondeados */
+    border: 1px solid #ccc; /* Borde gris */
+    box-sizing: border-box; /* Incluir el borde en el tamaño total */
+}
+
+/* Estilos para el botón de enviar */
+/* Estilos para el botón de enviar */
+input[type="submit"] {
+    background-color: #f774b5; /* Color de fondo rosado más oscuro */
+    color: white; /* Color de texto blanco */
+    padding: 20px 30px; /* Espaciado interno aumentado para hacer el botón más grande */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambio de cursor al pasar el ratón */
+    font-size: 18px; /* Tamaño de fuente aumentado */
+    display: block; /* Convertir a bloque para centrarlo */
+    margin: 0 auto; /* Centrar horizontalmente */
+}
+
+
+/* Estilo para el mensaje de error */
+.error {
+    color: red; /* Color rojo para los mensajes de error */
+    margin-top: 10px; /* Espacio superior para separarlo de los campos */
+}
