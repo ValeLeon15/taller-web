@@ -33,7 +33,7 @@ window.onload = function(){
         tamanoApellido.textContent =  apellido.value.length + '/100';
         let tipo = "apellido";
         if (apellido.value == parseInt(apellido.value) ||apellido.value.length == 0) {
-            updateError(tipo, "El nombre es obligatorio y no debe ser un entero.");
+            updateError(tipo, "El apellido es obligatorio y no debe ser un entero.");
         }else {
             errorApellido.textContent = '';
             bordeApellido.style.border="solid";
