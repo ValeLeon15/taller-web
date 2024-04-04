@@ -30,6 +30,56 @@
     <!-- Content goes here -->
     <section>
         <h1>DESCRIPCIONES DE ENDPOINTS</h1>
+        <div>
+            <h2>Endpoints del Controlador ArrendadorController:</h2>
+            <ul>
+                <li><strong>Obtener un arrendador por ID:</strong> Método: GET, URL: /progrupo14/arrendadores/{id}, Produces: JSON, Descripción: Este endpoint permite obtener un arrendador específico según su ID.</li>
+                <li><strong>Obtener todos los arrendadores:</strong> Método: GET, URL: /progrupo14/arrendadores, Produces: JSON, Descripción: Este endpoint devuelve una lista de todos los arrendadores disponibles.</li>
+                <li><strong>Guardar un nuevo arrendador:</strong> Método: POST, URL: /progrupo14/arrendadores, Produces: JSON, Descripción: Este endpoint permite guardar un nuevo arrendador. Espera recibir un objeto JSON en el cuerpo de la solicitud que representa al nuevo arrendador.</li>
+                <li><strong>Actualizar un arrendador existente:</strong> Método: PUT, URL: /progrupo14/arrendadores, Produces: JSON, Descripción: Este endpoint permite actualizar la información de un arrendador existente. Espera recibir un objeto JSON en el cuerpo de la solicitud que contiene los nuevos datos del arrendador a actualizar.</li>
+                <li><strong>Eliminar un arrendador por ID:</strong> Método: DELETE, URL: /progrupo14/arrendadores/{id}, Produces: JSON, Descripción: Este endpoint permite eliminar un arrendador específico según su ID.</li>
+            </ul>
+        </div>
+        <div>
+            <h2>Endpoints del Controlador ArrendatarioController:</h2>
+            <ul>
+                <li><strong>Obtener un arrendatario por ID:</strong> Método: GET, URL: /progrupo14/arrendatarios/{id}, Produces: JSON, Descripción: Este endpoint permite obtener un arrendatario específico según su ID.</li>
+                <li><strong>Obtener todos los arrendatarios:</strong> Método: GET, URL: /progrupo14/arrendatarios, Produces: JSON, Descripción: Este endpoint devuelve una lista de todos los arrendatarios disponibles.</li>
+                <li><strong>Guardar un nuevo arrendatario:</strong> Método: POST, URL: /progrupo14/arrendatarios, Produces: JSON, Descripción: Este endpoint permite guardar un nuevo arrendatario. Espera recibir un objeto JSON en el cuerpo de la solicitud que representa al nuevo arrendatario.</li>
+                <li><strong>Actualizar un arrendatario existente:</strong> Método: PUT, URL: /progrupo14/arrendatarios, Produces: JSON, Descripción: Este endpoint permite actualizar la información de un arrendatario existente. Espera recibir un objeto JSON en el cuerpo de la solicitud que contiene los nuevos datos del arrendatario a actualizar.</li>
+                <li><strong>Eliminar un arrendatario por ID:</strong> Método: DELETE, URL: /progrupo14/arrendatarios/{id}, Produces: JSON, Descripción: Este endpoint permite eliminar un arrendatario específico según su ID.</li>
+            </ul>
+        </div>
+        <div>
+            <h2>Endpoints relacionados con Calificaciones:</h2>
+            <ul>
+                <li><strong>Obtener una calificación por ID:</strong> Método: GET, URL: /progrupo14/calificaciones/{id}, Produces: JSON, Descripción: Este endpoint permite obtener una calificación específica según su ID.</li>
+                <li><strong>Obtener todas las calificaciones:</strong> Método: GET, URL: /progrupo14/calificaciones, Produces: JSON, Descripción: Este endpoint devuelve una lista de todas las calificaciones disponibles.</li>
+                <li><strong>Guardar una nueva calificación:</strong> Método: POST, URL: /progrupo14/calificaciones, Produces: JSON, Descripción: Este endpoint permite guardar una nueva calificación. Espera recibir un objeto JSON en el cuerpo de la solicitud que representa la nueva calificación.</li>
+                <li><strong>Actualizar una calificación existente:</strong> Método: PUT, URL: /progrupo14/calificaciones, Produces: JSON, Descripción: Este endpoint permite actualizar la información de una calificación existente. Espera recibir un objeto JSON en el cuerpo de la solicitud que contiene los nuevos datos de la calificación a actualizar.</li>
+                <li><strong>Eliminar una calificación por ID:</strong> Método: DELETE, URL: /progrupo14/calificaciones/{id}, Produces: JSON, Descripción: Este endpoint permite eliminar una calificación específica según su ID.</li>
+            </ul>
+        </div>
+        <div>
+            <h2>Endpoints relacionados con Propiedades:</h2>
+            <ul>
+                <li><strong>Obtener una propiedad por ID:</strong> Método: GET, URL: /progrupo14/propiedad/{id}, Produces: JSON, Descripción: Este endpoint permite obtener una propiedad específica según su ID.</li>
+                <li><strong>Obtener todas las propiedades:</strong> Método: GET, URL: /progrupo14/propiedad, Produces: JSON, Descripción: Este endpoint devuelve una lista de todas las propiedades disponibles.</li>
+                <li><strong>Guardar una nueva propiedad:</strong> Método: POST, URL: /progrupo14/propiedad, Produces: JSON, Descripción: Este endpoint permite guardar una nueva propiedad. Espera recibir un objeto JSON en el cuerpo de la solicitud que representa la nueva propiedad.</li>
+                <li><strong>Actualizar una propiedad existente:</strong> Método: PUT, URL: /progrupo14/propiedad, Produces: JSON, Descripción: Este endpoint permite actualizar la información de una propiedad existente. Espera recibir un objeto JSON en el cuerpo de la solicitud que contiene los nuevos datos de la propiedad a actualizar.</li>
+                <li><strong>Eliminar una propiedad por ID:</strong> Método: DELETE, URL: /progrupo14/propiedad/{id}, Produces: JSON, Descripción: Este endpoint permite eliminar una propiedad específica según su ID.</li>
+            </ul>
+        </div>
+        <div>
+            <h2>Endpoints relacionados con Solicitudes de Arrendamiento:</h2>
+            <ul>
+                <li><strong>Obtener una solicitud de arrendamiento por ID:</strong> Método: GET, URL: /progrupo14/solicitudarrendamiento/{id}, Produces: JSON, Descripción: Este endpoint permite obtener una solicitud de arrendamiento específica según su ID.</li>
+                <li><strong>Obtener todas las solicitudes de arrendamiento:</strong> Método: GET, URL: /progrupo14/solicitudarrendamiento, Produces: JSON, Descripción: Este endpoint devuelve una lista de todas las solicitudes de arrendamiento disponibles.</li>
+                <li><strong>Guardar una nueva solicitud de arrendamiento:</strong> Método: POST, URL: /progrupo14/solicitudarrendamiento, Produces: JSON, Descripción: Este endpoint permite guardar una nueva solicitud de arrendamiento. Espera recibir un objeto JSON en el cuerpo de la solicitud que representa la nueva solicitud de arrendamiento.</li>
+                <li><strong>Actualizar una solicitud de arrendamiento existente:</strong> Método: PUT, URL: /progrupo14/solicitudarrendamiento, Produces: JSON, Descripción: Este endpoint permite actualizar la información de una solicitud de arrendamiento existente. Espera recibir un objeto JSON en el cuerpo de la solicitud que contiene los nuevos datos de la solicitud de arrendamiento a actualizar.</li>
+                <li><strong>Eliminar una solicitud de arrendamiento por ID:</strong> Método: DELETE, URL: /progrupo14/solicitudarrendamiento/{id}, Produces: JSON, Descripción: Este endpoint permite eliminar una solicitud de arrendamiento específica según su ID.</li>
+            </ul>
+        </div>
     </section>
   </main>
 </body>
