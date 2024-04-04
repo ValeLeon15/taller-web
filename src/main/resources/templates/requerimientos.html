@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Name group</title>
   <link rel ="stylesheet" href="/grupo14/css/main.css" />
-
 </head>
 <body>
   <header>
@@ -30,8 +29,76 @@
   <main>
     <!-- Content goes here -->
     <section>
-        Funcionales <br/>
-        No funcionales
+        <h2>Requerimientos Funcionales:</h2>
+        <ol>
+          <li>Autenticación y Autorización:
+            <ul>
+              <li>El sistema debe permitir a los usuarios registrarse como arrendatarios o arrendadores.</li>
+              <li>Debe existir un proceso de inicio de sesión seguro para ambos tipos de usuarios.</li>
+              <li>Los usuarios deben tener roles definidos (arrendatario o arrendador) con permisos correspondientes.</li>
+            </ul>
+          </li>
+          <li>Gestión de Propiedades:
+            <ul>
+              <li>Los usuarios arrendatarios deben poder crear, editar, eliminar y actualizar propiedades disponibles para arrendamiento.</li>
+              <li>Se debe proporcionar una interfaz intuitiva para la gestión de propiedades que incluya la capacidad de cargar imágenes y detalles relevantes.</li>
+            </ul>
+          </li>
+          <li>Interacción entre Usuarios:
+            <ul>
+              <li>Los usuarios arrendatarios deben poder revisar y responder a las solicitudes de arrendamiento recibidas.</li>
+              <li>Los usuarios arrendadores deben poder buscar propiedades disponibles y solicitar arrendamientos.</li>
+              <li>Ambos tipos de usuarios deben poder comunicarse entre sí a través de un sistema de mensajería integrado.</li>
+            </ul>
+          </li>
+          <li>Gestión de Pagos:
+            <ul>
+              <li>El sistema debe permitir a los usuarios realizar y recibir pagos de manera segura.</li>
+              <li>Los usuarios arrendadores deben poder realizar el pago correspondiente al arrendamiento de una propiedad.</li>
+              <li>Los usuarios arrendatarios deben poder verificar los pagos recibidos y realizar seguimiento de los mismos.</li>
+            </ul>
+          </li>
+          <li>Calificaciones y Comentarios:
+            <ul>
+              <li>Los usuarios arrendatarios deben poder proporcionar calificaciones y comentarios sobre la experiencia de arrendamiento.</li>
+              <li>Los usuarios arrendadores deben poder calificar tanto las propiedades arrendadas como a los arrendatarios.</li>
+            </ul>
+          </li>
+        </ol>
+        
+        <h2>Requerimientos No Funcionales:</h2>
+        <ol>
+          <li>Seguridad:
+            <ul>
+              <li>El sistema debe garantizar la seguridad de los datos sensibles de los usuarios, como información de pago y datos personales.</li>
+              <li>Se deben implementar medidas de seguridad para prevenir ataques de hackers y fugas de información.</li>
+            </ul>
+          </li>
+          <li>Usabilidad:
+            <ul>
+              <li>La interfaz de usuario debe ser intuitiva y fácil de usar para usuarios de todos los niveles de habilidad.</li>
+              <li>Se deben proporcionar instrucciones claras y ayuda contextual en caso de que los usuarios encuentren dificultades.</li>
+            </ul>
+          </li>
+          <li>Rendimiento:
+            <ul>
+              <li>El sistema debe ser capaz de manejar un alto volumen de usuarios y transacciones simultáneas sin experimentar retrasos significativos.</li>
+              <li>Se deben realizar pruebas de carga para garantizar que la plataforma sea capaz de escalar adecuadamente.</li>
+            </ul>
+          </li>
+          <li>Disponibilidad:
+            <ul>
+              <li>El sistema debe estar disponible las 24 horas del día, los 7 días de la semana, con un tiempo de inactividad mínimo para mantenimiento programado.</li>
+              <li>Se deben implementar medidas de redundancia y respaldo para garantizar la continuidad del servicio en caso de fallos.</li>
+            </ul>
+          </li>
+          <li>Escalabilidad:
+            <ul>
+              <li>La arquitectura del sistema debe ser modular y escalable para poder adaptarse a futuros cambios en la demanda y funcionalidades adicionales.</li>
+              <li>Se debe planificar una estrategia de escalabilidad para garantizar que el sistema pueda crecer según sea necesario sin comprometer el rendimiento.</li>
+            </ul>
+          </li>
+        </ol>
     </section>
   </main>
 </body>
