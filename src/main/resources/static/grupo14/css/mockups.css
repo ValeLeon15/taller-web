@@ -1,0 +1,13 @@
+ /* Estilos para las imágenes de los integrantes */
+ .mockups img {
+    width: 500px; /* Ancho fijo para las imágenes */
+    height: auto; /* Altura automática para mantener la proporción */
+    border-radius: 10px; /* Bordes redondeados */
+    margin-bottom: 15px; /* Espacio inferior entre la imagen y la descripción */
+    /*centrar la imagen */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid black; /* Bordes negros, no muy gruesos */
+
+  }
